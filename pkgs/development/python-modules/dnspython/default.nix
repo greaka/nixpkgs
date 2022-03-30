@@ -10,13 +10,13 @@
 
 buildPythonPackage rec {
   pname = "dnspython";
-  version = "2.2.0";
+  version = "2.2.1";
   disabled = pythonOlder "3.6";
 
   src = fetchPypi {
     inherit pname version;
     extension = "tar.gz";
-    sha256 = "1mi6l2n766y1gic3x1swp2jk2nr7wbkb191qinwhddnh6bh534z7";
+    sha256 = "sha256-D3VppKb/FRlYtkMEBx03DaoyQ9FZQae+7fDJ/lEFYD4=";
   };
 
   checkInputs = [
